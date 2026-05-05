@@ -1,0 +1,11 @@
+# @package training
+
+epochs_per_task: 10
+batch_size: 32
+learning_rate: 0.001
+weight_decay: 1e-4
+optimizer: "adam"
+scheduler: null
+early_stopping:
+  patience: 5
+  min_delta: 0.001

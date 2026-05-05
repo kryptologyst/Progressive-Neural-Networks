@@ -1,0 +1,10 @@
+# @package data
+
+_target_: progressive_nn.data.SyntheticContinualLearning
+
+num_tasks: 3
+samples_per_task: 1000
+input_dim: 20
+num_classes_per_task: 2
+test_size: 0.2
+random_state: 42

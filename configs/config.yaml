@@ -1,0 +1,26 @@
+# @package _global_
+
+defaults:
+  - _self_
+  - override /model: progressive
+  - override /data: digits
+  - override /training: default
+
+# Experiment configuration
+experiment:
+  name: "progressive_neural_networks"
+  seed: 42
+  device: "auto"  # auto, cuda, mps, cpu
+  
+# Logging configuration
+logging:
+  level: "INFO"
+  log_dir: "logs"
+  use_wandb: false
+  wandb_project: "progressive-nn"
+  
+# Output configuration
+output:
+  save_dir: "checkpoints"
+  save_frequency: 5
+  save_best: true
